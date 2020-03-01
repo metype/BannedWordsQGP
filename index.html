@@ -1,10 +1,22 @@
 <html>
   <head>
     <title>Banned Words List</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    
+    <script>
+      if(confirm("This list may contain seriously profane and/or offensive words, are you OK with viewing words like this?")){
+        let title = document.createElement("DIV");
+        title.innerHTML = "<h1>Banned Words for Queen's Gaming Palace</h1>";
+        document.body.appendChild(title);
+        let p = document.createElement("p");
+        p.innerHTML = "fuck</br>piss</br>ass</br>goddamn</br>fucking</br>pissed</br>asshole</br>fucked</br>fuk</br>fook</br>motherfucker</br>motherfuker</br>motherfooker</br>motherfucking</br>motherfooking</br>motherfuking</br>goddam</br>goddammit</br>bitch</br>bitches</br>cunniliugus</br>fuxk</br>fuc</br>fuk"
+        document.body.appendChild(p);
+      }else{
+        let title = document.createElement("DIV");
+        title.innerHTML = "<h1>User has Elected Not To View List</h1>";
+        document.body.appendChild(title);
+      }
+    </script>
   </body>
 </html>
